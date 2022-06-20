@@ -1,1 +1,1 @@
-
+** collection of loop activities **
