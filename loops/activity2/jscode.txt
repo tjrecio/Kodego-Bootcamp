@@ -1,1 +1,47 @@
+nested loop with break and continue; use case: login page with limited attempts
+
+let count = 0;
+
+while(true){
+    if (count === 5){
+        break;
+    }
+    console.log(count + "\n");
+    count++;
+}
+
+for (i = 0; i < 10; i++) {
+  if (i == 5) {   
+    continue;
+  }
+  console.log(i);
+}
+
+
+*** activity 2***
+1. display 0-20 per line
+for (n = 0; n <= 20; n++) {
+    console.log(n)
+}
+
+2. display odd values 3-29
+let n = 3;
+while (n <= 30){
+    console.log(n);
+    n = n + 2;
+}
+
+3. display even values 12 - -14 descending order
+for (n = 12; n >= -14; n = n - 2){
+    console.log(n);
+}
+
+4. display 50 down to 20, but only multiples of 3
+let n = 50;
+while (n >=20){
+    if (n %3 == 0){
+        console.log(n)
+    }
+    --n;
+}
 
