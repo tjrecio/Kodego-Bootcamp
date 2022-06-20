@@ -1,1 +1,12 @@
+/*display even number from 0 to 100*/
+for (a = 2; a <=100; a = a + 2){
+    console.log(a);
+}
 
+/*display total of numbers between 20 to 30*/
+let sum = 0;
+let ctr = 20;
+while (ctr <= 30) {
+    sum = sum + ctr;
+    ctr++;
+} console.log(sum);
