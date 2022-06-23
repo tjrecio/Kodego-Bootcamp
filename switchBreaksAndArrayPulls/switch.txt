@@ -1,1 +1,97 @@
 
+*** switch and case, and array pulls ***
+
+let idNo = 4;
+
+switch(idNo){
+    case 0:
+        console.log("Alyssa");
+        break;
+    case 1:
+        console.log("Nelmie");
+        break;
+    case 2:
+        console.log("Kevin");
+        break;    
+    case 3:
+        console.log("Vic");
+        break;
+    default:
+        console.log("Sorry, the student cannot be found.")
+}
+
+1. score result
+let score = 69;
+switch(score >= 70){
+        case true:
+            console.log("pass");
+            break;
+        case false:
+            console.log("fail");
+            break;
+        default:
+            console.log("invalid");
+            break;
+    }
+
+2. day of week
+let day = 2;
+switch(day){
+        case 1:
+            console.log("sunday");
+            break;
+        case 2:
+            console.log("monday");
+            break;
+        case 3:
+            console.log("tuesday");
+            break;
+        case 4:
+            console.log("wednesday");
+            break;
+        case 5:
+            console.log("thursday");
+            break;
+        case 6:
+            console.log("friday");
+            break;
+        case 7:
+            console.log("saturday");
+            break;
+        default:
+            console.log("not valid");
+            break;
+    }
+
+3. day of months decider
+let year = 2016;
+let month = 1;
+let dayCount;
+
+switch (month) {
+  case 1:
+  case 3:
+  case 5:
+  case 7:
+  case 8:
+  case 10:
+  case 12:
+    dayCount = 31;
+    break;
+  case 4:
+  case 6:
+  case 9:
+  case 11:
+    dayCount = 30;
+    break;
+  case 2:
+    // leap year
+    if ((year % 4 == 0 && !(year % 100 == 0)) || year % 400 == 0) {
+      dayCount = 29;
+    } else {
+      dayCount = 28;
+    }
+    break;
+  default:
+    dayCount = -1; // invalid month
+}
