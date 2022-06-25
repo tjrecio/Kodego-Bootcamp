@@ -1,1 +1,56 @@
+Functions - a block of code designed to perform a particular task. It is executed when something calls it.
+
+//
+function addNumbers(num1,num2) {
+    console.log(num1 + num2);
+}
+
+//
+function addNumbers(num1,num2) {
+    return num1 + num2;
+}
+
+//
+function addNumbers(num1,num2) {
+    return num1 + num2;
+}
+let sum = addNumbers(3,5);
+console.log(sum);
+
+//
+for(let i=2000; i <= 2022; i++){
+    if(checkIfLeapYear(i)){
+        console.log(i + " is a leap year");
+    } else{
+        console.log(i + " is not a leap year")
+    }
+}
+
+function checkIfLeapYear(year){
+    let isLeapYear = false;
+    if ((year % 4 == 0 && !(year % 100 == 0)) || year % 400 == 0){
+         isLeapYear = true;
+    }
+    return isLeapYear;
+}
+
+//
+1. 
+function numSq(num){
+    return num*num;
+}
+console.log(numSq(num));
+
+2.
+function calFarenheit(cel){
+    return ((cel * (9/5)) + 32);
+}
+console.log(calFarenheit(cel));
+
+3. 
+function rectangleArea(a,b){
+    return a*b;
+}
+console.log(rectangleArea(a,b));
+
 
