@@ -1,1 +1,66 @@
+DOM intro: targeting, change, events
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Page</h2>
+<p id="demo">ex text</p>
+
+<script>
+
+document.getElementById("demo").onclick = function(){
+    document.getElementById("demo").innerHTML = "new text";
+};
+    
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Page</h2>
+<p id="demo">ex text</p>
+
+<script>
+ 
+let x = document.getElementById("demo");
+
+x.onclick = function(){
+    x.innerHTML = "new text";
+    x.style.color = "Red";
+}
+
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Course</title>
+</head>
+<body>
+    <div class="output">What is your Name?</div>
+    <input type="text" name="userName">
+    <button>Submit</button>
+
+    <script>
+        let x = document.getElementsByTagName("button")[0];
+        let y = document.getElementsByName("userName")[0];
+        let z = document.getElementsByClassName("output")[0];
+
+        x.onclick = function(){
+            if(y.value.length < 3){
+                z.innerHTML = "Name too short. Please enter 3 or more letters.";
+            }
+            else{
+                z.innerHTML = "Welcome!";
+            }
+        }  
+    </script>
+</body>
+</html>
 
