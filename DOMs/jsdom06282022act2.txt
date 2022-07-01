@@ -1,0 +1,43 @@
+btn1 will increment 1 to the div with the output class
+btn2 will multiply by 2 to the div with the output class
+btn3 will deduct 3 to the div with the output class
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Course</title>
+</head>
+<body>
+    <div class="output"></div>
+    <button class="btn1">Adder 1</button>
+    <button class="btn2">Adder 2</button>
+    <button class="btn3">Adder 3</button>
+
+    <script>
+        let buttons = document.getElementsByTagName('button');
+        let output = document.getElementsByClassName('output');
+        let counter = 0;
+
+
+        buttons[0].onclick = function(){
+            counter++;
+            display();
+        }
+        buttons[1].onclick = function(){
+            counter *= 2;
+            display();
+        }
+        buttons[2].onclick = function(){
+            counter -= 3;
+            display();
+        }
+
+        function display(){
+            output[0].innerHTML = '<h1>' + counter + "</h1>";
+        }
+    </script>
+</body>
+</html>
