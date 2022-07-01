@@ -85,7 +85,13 @@
 
     <script>
 
+        document.getElementsByTagName("li")[0].innerHTML = "first";
+        document.getElementsByTagName("li")[3].innerHTML = "first";
+        document.getElementsByTagName("li")[6].innerHTML = "first";
 
+        document.getElementsByTagName("li")[2].innerHTML = "last";
+        document.getElementsByTagName("li")[5].innerHTML = "last";
+        document.getElementsByTagName("li")[8].innerHTML = "last";
 
     </script>
 </body>
