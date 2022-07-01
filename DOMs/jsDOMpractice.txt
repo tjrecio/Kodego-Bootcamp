@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul></ul>
+
+    <script>
+        
+        const fruitlist = ['apple', 'banana', 'tomato'];
+        let flist = document.getElementsByClassName("fruitlist");
+
+        let a = document.createElement("li");
+        a.innerHTML = fruitlist[0];
+        let b = document.createElement("li");
+        b.innerHTML = fruitlist[1];
+        let c = document.createElement("li");
+        c.innerHTML = fruitlist[2];
+
+        document.getElementsByTagName("ul")[0].appendChild(a);
+        document.getElementsByTagName("ul")[0].appendChild(b);
+        document.getElementsByTagName("ul")[0].appendChild(c);
+
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+
+    <script>
+        
+        const imageSrc = "https://dy9hpnbyn8tl0.cloudfront.net/kodego-large.svg";
+        var img = document.createElement("img");
+        img.src = imageSrc;
+
+        document.getElementsByTagName("div")[0].appendChild(img);
+
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+    <ul>
+        <li>👻</li>
+        <li>👽</li>
+        <li>🦁</li>
+    </ul>
+
+    <script>
+
+
+
+    </script>
+</body>
+</html>
