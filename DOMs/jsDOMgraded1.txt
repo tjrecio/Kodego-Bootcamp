@@ -1,0 +1,83 @@
+1. Select the section with an id of container without using querySelector.
+
+    <script>
+        document.getElementById("container");
+    </script>
+
+2. Select the section with an id of container using querySelector.
+
+    <script>
+        document.querySelectorAll("section")[0];
+    </script>
+
+3. Select all of the list items with a class of "second".
+
+    <script>
+        document.getElementsByTagName("li")[1];
+        document.getElementsByTagName("li")[4];
+    </script>
+
+4. Select a list item with a class of third, but only the list item inside of the ol tag.
+
+    <script>
+        document.getElementsByTagName("li")[5];
+    </script>
+
+5. Give the section with an id of container the text "Hello!".
+
+    <script>
+        document.getElementById("container").innerHTML = "Hello!";
+    </script>
+
+6. Add the class main to the div with a class of footer.
+
+    <script>
+        document.getElementsByClassName("footer")[0].setAttribute("class","footer main");
+    </script>
+
+7. Remove the class main on the div with a class of footer.
+
+    <script>
+        document.getElementsByClassName("footer")[0].setAttribute("class","footer");
+    </script>
+
+8. Create a new li element.
+
+    <script>
+        document.createElement("li");
+    </script>
+
+9. Give the li the text "four".
+	
+    <script>
+       let a = document.createElement("li");
+       a.innerHTML = "four";
+    </script>
+
+10. Append the li to the ul element.
+
+    <script>
+       let a = document.createElement("li");
+       a.innerHTML = "four";
+       document.getElementsByTagName("ul")[0].appendChild(a);
+    </script>
+
+11. Loop over all of the lis inside the ol tag and give them a background color of "green".
+
+    <script>
+        let a = document.getElementsByTagName("li");
+        var i = 3;
+
+       for (i = 3; i < 6; i++){
+        a[i].style.background = "green";
+       } 
+    </script>
+
+12. Remove the div with a class of footer.
+
+    <script>
+        const element = document.getElementsByTagName("div");
+        element[1].remove();
+    </script>
+
+
